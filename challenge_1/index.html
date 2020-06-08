@@ -3,26 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Tic-Tac-Toe</title>
-    <script src="app.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
     <div>Tic-Tac-Toe</div>
-    <table style="border-collapse: collapse; empty-cells: show;" border="2" >
+    <table style="border-collapse: collapse; empty-cells: show; table-layout: fixed; width: 210px; height: 210px" border="2" >
       <tr>
-        <td style="height: 30px; width:30px" id="7" onclick= changeContent(this.id)></td>
-        <td style="height: 30px; width:30px" id="8" onclick= changeContent(this.id)></td>
-        <td style="height: 30px; width:30px" id="9" onclick= changeContent(this.id)></td>
+        <td style="height: 70px; width:70px" id="7" onclick= "changeContent(this.id)"></td>
+        <td style="height: 70px; width:70px" id="8" onclick= "changeContent(this.id)"></td>
+        <td style="height: 70px; width:70px" id="9" onclick= "changeContent(this.id)"></td>
       </tr>
       <tr>
-        <td style="height: 30px; width:30px" id="4" onclick= changeContent(this.id)></td>
-        <td style="height: 30px; width:30px" id="5" onclick= changeContent(this.id)></td>
-        <td style="height: 30px; width:30px" id="6" onclick= changeContent(this.id)></td>
+        <td style="height: 70px; width:70px" id="4" onclick= "changeContent(this.id)"></td>
+        <td style="height: 70px; width:70px" id="5" onclick= "changeContent(this.id)"></td>
+        <td style="height: 70px; width:70px" id="6" onclick= "changeContent(this.id)"></td>
       </tr>
       <tr>
-        <td style="height: 30px; width:30px" id="1" onclick= changeContent(this.id)></td>
-        <td style="height: 30px; width:30px" id="2" onclick= changeContent(this.id)></td>
-        <td style="height: 30px; width:30px" id="3" onclick= changeContent(this.id)></td>
+        <td style="height: 70px; width:70px" id="1" onclick= "changeContent(this.id)"></td>
+        <td style="height: 70px; width:70px" id="2" onclick= "changeContent(this.id)"></td>
+        <td style="height: 70px; width:70px" id="3" onclick= "changeContent(this.id)"></td>
       </tr>
     </table>
+    <button name="button" onclick="resetGame()">Reset Game</button>
+    <div id="display">X goes first</div>
+    <script src="app.js" defer></script>
   </body>
 </html>
